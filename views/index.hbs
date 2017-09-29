@@ -1,0 +1,45 @@
+<!--Navbar -->
+<nav class="nav-style navbar navbar-default navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Mongo Scraper</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a id="home" href="/">Home</a></li>
+                <li><a href="/article">Saved Articles</a></li>
+                <li>
+                    <form method="GET" action="/scrape">
+                        <button type="submit" class="btn btn-danger scrap">SCRAP NEW ARTICLES!</button></li>
+                    </form>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</nav>
+<!-- Main component for a primary marketing message or call to action -->
+<div class="row">
+    <div class="col-sm-12 color-white">
+        <img class="img-responsive title-img" src="./images/print.jpg" alt="title image">
+        <div class="tags">
+            <h1 class="text-center position-rel">Mongo Scraper</h1>
+            <h3 class="text-center position-rel">New York Times Edition</h3>
+        </div>
+    </div>
+</div>
+
+  {{#if save}}
+    {{>saved-articles}}
+  {{else}}
+    {{>scrape}}
+  {{/if}}
+
+<!--New note modal -->
+{{>note}}

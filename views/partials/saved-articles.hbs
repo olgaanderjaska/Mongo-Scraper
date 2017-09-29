@@ -1,0 +1,20 @@
+<div class="container article-block">
+    <div class="row saved">
+        <div class="col-sm-12">
+            <div class="article">
+                {{#each articles}}
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 id='artTitle' class="panel-title">{{this.title}}</h3>
+                        <button class="btn btn-success create-none float-right note-modal" data-id="{{this._id}}" data-toggle="modal" data-target="#myModal">ARTICLE NOTES</button>
+                        <form action="/article/{{this._id}}?method=delete" method="post">
+                            <button type="submit" class="btn btn-danger delete-art float-right">DELETE FROM SAVED</button>
+                        </form>
+                    </div>
+                    <div id='artPost' class="panel-body"> {{this.post}} </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>

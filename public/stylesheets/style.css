@@ -1,0 +1,78 @@
+.nav-style {
+  background-color: #41a6f9;
+  color: white;
+  margin-bottom: 0px;
+}
+
+body {
+  background-color: #f2f1f3;
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+}
+
+.scrap {
+  margin-top: 8px;
+}
+
+.title-img {
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(60%);
+  position: absolute;
+  /*z-index: -1;*/
+}
+
+.position-rel {
+  position: relative;
+}
+
+.yellow {
+  background-color: orange;
+}
+
+.color-white>h1 {
+  font-weight: bold;
+}
+
+.float-right {
+  float: right;
+}
+
+#artTitle {
+  float: left;
+}
+
+.panel-heading {
+  overflow: hidden;
+}
+
+.note {
+  margin-top: 20px;
+  border: 1px solid #d4d8dd;
+  overflow: hidden;
+}
+
+.float-left {
+  float: left;
+}
+
+.article-block {
+  position: relative;
+  top: 290px;
+}
+
+.tags{
+  color: blue;
+  position: relative;
+  top: 100px;
+}
+
+.tags h1{
+  font-weight: 900;
+}
